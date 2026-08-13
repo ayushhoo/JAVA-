@@ -1,0 +1,26 @@
+// Question 6: Develop a program to implement multiple inheritance using interfaces.
+interface Printable {
+    void print();
+}
+
+interface Showable {
+    void show();
+}
+
+class Document implements Printable, Showable {
+    public void print() {
+        System.out.println("Printing document");
+    }
+
+    public void show() {
+        System.out.println("Showing document");
+    }
+}
+
+public class Question6 {
+    public static void main(String[] args) {
+        Document d = new Document();
+        d.print();
+        d.show();
+    }
+}
