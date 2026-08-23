@@ -1,0 +1,25 @@
+// Package: shapes
+// Class: Rectangle implements Shape
+// Formula: area = length * width, perimeter = 2 * (length + width)
+
+package shapes;
+
+public class Rectangle implements Shape {
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public double area() {
+        return length * width;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2 * (length + width);
+    }
+}
